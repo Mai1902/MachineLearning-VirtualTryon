@@ -1,0 +1,33 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  grade:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "/home/runner/.pyenv/bin" >> $GITHUB_PATH
+        echo "/home/runner/.local/bin" >> $GITHUB_PATH
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: '0'
+    - name: Set up grading environment
+      run: |
+        curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+        pyenv install 3.6.3
+        echo "eval '$(pyenv init -)'" >> ~/.bashrc
+        eval "$(pyenv virtualenv-init -)" >> ~/.bashrc
+        source ~/.bashrc
+        pyenv global 3.6.3
+        pip install --upgrade pip
+        pip install pipenv
+    - name: Check lab 03 writing and commits
+      run: |
+        gradle grade
+      if: always()
+      env:
+       PIPENV_VENV_IN_PROJECT: 1
+       PIPENV_IGNORE_VIRTUALENVS: 1

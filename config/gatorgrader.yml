@@ -1,0 +1,40 @@
+---
+name: lab03
+break: true
+indent: 4
+---
+
+# GatorGrader configuration file
+
+# Learn more about GatorGrader and its supported checks by visiting this web site:
+# https://github.com/GatorEducator/gatorgrader
+
+# Explanation:
+# --> a check without an "--exact" runs a count for an entity as an "at least"
+# --> checks below a file in a specified directory are for that specific file and directory
+# --> checks that appear stand-alone are for an entire Git repository
+
+# --> check the technical writing for various characteristics
+writing/proposal.md:
+    ConfirmFileExists
+    CountFileWords --count 500
+    CountMarkdownTags --tag "heading" --count 3 --exact
+    MatchFileFragment --fragment "Add your name(s)" --count 0 --exact
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+
+writing/progress.md:
+    ConfirmFileExists
+    CountFileWords --count 1000
+    CountMarkdownTags --tag "heading" --count 5 --exact
+    MatchFileFragment --fragment "Add your name(s)" --count 0 --exact
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+
+writing/report.md:
+    ConfirmFileExists
+    CountFileWords --count 2000
+    CountMarkdownTags --tag "heading" --count 14 --exact
+    MatchFileFragment --fragment "Add your name(s)" --count 0 --exact
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+
+# --> check that the number of commits in the Git repository is beyond a threshold
+CountCommits --count 30
