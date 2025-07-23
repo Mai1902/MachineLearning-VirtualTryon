@@ -2,11 +2,14 @@
 
 ## Mai Nguyen Dac & Adam Shinomiya
 
-## Project Summary
 
-In the past two years, online shopping has became one of the essential parts of human's life since in person shopping might, ironically, expose costumers to the lethal virus. However, the instant blooming of E-commerce has a lot of problems, as past studies have asserted that customers perceive more risk with online or mobile shopping than offline purchasing (Schröder & Zaharia, 2008). Especially with Makeups and Personal care items, which was ranked as the number one items being bought online over the course of this pandemic, it is extremely hard for costumer to get the right products in this category due to the high level of diversity in skin tone, natural pigmentations, natural hair types, hormonal's needs, etc.. With what being said, our team suppose that a Virtual Product's Try-on should be a resolution for this complication since it will not only reduce the stress of costumer on finding their best fit, but also help firms on selling more products.
+In the past two years, online shopping has become an essential part of daily life, as in-person shopping posed health risks during the pandemic. However, the rapid rise of e-commerce brought new challenges—previous studies (Schröder & Zaharia, 2008) have shown that customers often perceive greater risks with online or mobile shopping compared to traditional retail, especially in product categories requiring personalization.
 
-After a thorough research online and a review of materials covered in the class, we decided to create a Virtual Lipstick Try-on Application using opencv, numpy, and dlib. This application provides 6 different lipstick colors, including Punch, Rose, Brick red, Dusty rose, Nude, Royal blue which costumer can try them on virtually to see which color will look best on them. Once the color is decided, the machine will return with a range of recommended lipsticks that are sharing the same color code to the chosen color. By this way, clients will be able to get the right shade for their lipstick effortlessly, which will then save a lot of time and money for the clients. Moreover, this applications can help costumers to choose the suitable lipstick for other people as well, so having a gift as lipstick will not be a pain anymore.
+Makeup and personal care products, which became the top-selling category online during the pandemic, are particularly difficult to purchase virtually due to the wide variation in skin tones, undertones, hair types, and hormonal differences. As a response to this challenge, our team proposed a Virtual Product Try-On solution to help consumers confidently choose the right products, while also boosting sales for retailers.
+
+After conducting thorough research and reviewing relevant course materials, we developed a Virtual Lipstick Try-On Application using OpenCV, NumPy, and dlib. The application offers six lipstick shades—Punch, Rose, Brick Red, Dusty Rose, Nude, and Royal Blue—which users can try on virtually in real time to find the most flattering color. Once a color is selected, the system recommends a set of commercially available lipsticks that closely match the selected shade.
+
+This application not only saves time and reduces uncertainty for customers but also improves the gifting experience, allowing users to confidently choose lipstick shades for others. By combining computer vision with personalized beauty recommendations, our tool offers a seamless and efficient shopping experience for the modern consumer.
 
 ## Usage guidelines
 
